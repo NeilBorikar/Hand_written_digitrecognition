@@ -1,0 +1,115 @@
+/* AI Handwritten Digit Recognition — Vercel Frontend */
+
+body {
+  background: #0e0e10;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 420px;
+  background: #1c1c1e;
+  border-radius: 16px;
+  padding: 25px 30px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 1.6rem;
+  color: #00c853;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+canvas {
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  cursor: crosshair;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.predict {
+  background: #00c853;
+  color: #fff;
+}
+
+.clear {
+  background: #ff5252;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.result-box {
+  background: #121212;
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 50px;
+}
+
+#result {
+  color: #00e676;
+  font-size: 1.3rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 15px;
+}
+
+/* Loader Spinner */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #00c853;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
