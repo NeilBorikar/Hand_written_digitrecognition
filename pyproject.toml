@@ -2,7 +2,7 @@
 name = "hand-written-digitrecognition"
 version = "0.1.0"
 description = "Handwritten Digit Recognition using MNIST"
-requires-python = "==3.11.*"
+requires-python = "==3.11.8"
 dependencies = [
     "Flask==3.0.0",
     "tensorflow-cpu==2.15.0",
