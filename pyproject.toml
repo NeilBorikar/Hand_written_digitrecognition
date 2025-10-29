@@ -1,0 +1,14 @@
+[project]
+name = "hand-written-digitrecognition"
+version = "0.1.0"
+description = "Handwritten Digit Recognition using MNIST"
+requires-python = "==3.11.*"
+dependencies = [
+    "Flask==3.0.0",
+    "tensorflow-cpu==2.15.0",
+    "numpy==1.26.0",
+    "matplotlib==3.8.0",
+    "scikit-learn==1.3.0",
+    "pillow==10.0.1",
+    "gunicorn==21.2.0"
+]
